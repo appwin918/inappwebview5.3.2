@@ -13,7 +13,6 @@ public class UserScript : WKUserScript {
 
     private var _contentWorld: Any? = nil
 
-    @available(iOS 14.0, *)
     var contentWorld: WKContentWorld {
         get {
             return (_contentWorld as? WKContentWorld) ?? WKContentWorld.page
